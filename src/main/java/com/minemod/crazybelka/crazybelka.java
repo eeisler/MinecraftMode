@@ -1,9 +1,8 @@
-package com.aeresilf.dop193;
+package com.minemod.crazybelka;
 
-import com.aeresilf.dop193.block.ModBlocks;
-import com.aeresilf.dop193.item.ModItems;
+import com.minemod.crazybelka.block.ModBlocks;
+import com.minemod.crazybelka.item.ModItems;
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -16,16 +15,14 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-@Mod(dop193.MOD_ID)
-public class dop193
+@Mod(crazybelka.MOD_ID)
+public class crazybelka
 {
+    public static final String MOD_ID = "crazybelka";
 
-    public static final String MOD_ID = "dop193";
-
-    //ignore private nousage
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public dop193()
+    public crazybelka()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
@@ -46,15 +43,12 @@ public class dop193
     private void addCreative(CreativeModeTabEvent.BuildContents event)
     {
         if(event.getTab() == CreativeModeTabs.INGREDIENTS) {
-        event.accept(ModItems.BLACK_OPAL);
+        event.accept(ModItems.CRAZY_BELKA);
         }
         if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS){
-            event.accept(ModBlocks.BLACK_OPAL_BLOCK);
+            event.accept(ModBlocks.CRAZY_BELKA_BLOCK);
         }
     }
-
-
-
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
@@ -62,6 +56,7 @@ public class dop193
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+
         }
     }
 }

@@ -2,16 +2,16 @@ modLoader="javafml" #mandatory
 loaderVersion="[44,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 license="MIT"
 [[mods]] #mandatory
-modId="dop193" #mandatory
+modId="crazybelka" #mandatory
 version="${file.jarVersion}" #mandatory
-displayName="DOP forge 1.19.3" #mandatory
+displayName="Crazy Belka" #mandatory
 logoFile="" #optional
 credits="" #optional
-authors="aeresilf" #optional
+authors="minemod" #optional
 description='''
 test
 '''
-[[dependencies.dop193]] #optional
+[[dependencies.CrazyBelka]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -23,7 +23,7 @@ test
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
 # Here's another dependency
-[[dependencies.dop193]]
+[[dependencies.CrazyBelka]]
     modId="minecraft"
     mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version

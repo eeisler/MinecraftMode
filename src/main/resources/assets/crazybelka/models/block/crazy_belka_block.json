@@ -2,6 +2,6 @@
   "parent":"minecraft:block/cube_all",
   "textures":
   {
-    "all":"dop193:block/black_opal_block"
+    "all":"CrazyBelka:block/crazy_belka_block"
   }
 }

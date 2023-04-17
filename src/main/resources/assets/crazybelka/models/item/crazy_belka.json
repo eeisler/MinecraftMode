@@ -2,6 +2,6 @@
   "parent": "minecraft:item/generated",
   "textures":
   {
-    "layer0": "dop193:item/black_opal"
+    "layer0": "CrazyBelka:item/crazy_belka"
   }
 }

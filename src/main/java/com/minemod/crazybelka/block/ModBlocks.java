@@ -1,7 +1,7 @@
-package com.aeresilf.dop193.block;
+package com.minemod.crazybelka.block;
 
-import com.aeresilf.dop193.dop193;
-import com.aeresilf.dop193.item.ModItems;
+import com.minemod.crazybelka.crazybelka;
+import com.minemod.crazybelka.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -16,7 +16,7 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, dop193.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, crazybelka.MOD_ID);
     public static void register(IEventBus eventBus){
         BLOCKS.register(eventBus);
     }
@@ -29,7 +29,7 @@ public class ModBlocks {
         registerBlokItem(name, toReturn);
         return toReturn;
     }
-    public static final RegistryObject<Block> BLACK_OPAL_BLOCK = registerBlock("black_opal_block",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.METAL)
+    public static final RegistryObject<Block> CRAZY_BELKA_BLOCK = registerBlock("crazy_belka_block",
+            ()-> new Block(BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(6f).requiresCorrectToolForDrops()));
 }
